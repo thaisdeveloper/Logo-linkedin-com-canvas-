@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+
+<canvas width="600" height="400">
+    
+   
+        
+</canvas>
+
+<script>
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0, 0, 600, 400);
+    pincel.fillStyle = "#007bb6";
+    pincel.fillRect(200, 140, 130, 150);
+    pincel.fillStyle = "#ffffff";
+    pincel.fillRect(220, 190, 20, 80);
+    let n = tela.getContext("2d");
+    n.font = "150px Avenir Black";
+    n.fillStyle = "#ffffff";
+    n.fillText("n", 240, 270);
+    pincel.fillStyle = "#ffffff";
+    pincel.beginPath();
+    pincel.arc(229, 166, 13, 0, 2 * 3.14);
+    pincel.fill();
+</script>
